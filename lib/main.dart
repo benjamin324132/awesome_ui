@@ -15,6 +15,7 @@ import 'package:awesome_ui/screens/Poster/poster_screen.dart';
 import 'package:awesome_ui/screens/Scaper/scraper_screen.dart';
 import 'package:awesome_ui/screens/Signup/signup_screen.dart';
 import 'package:awesome_ui/screens/SmartHome/smart_home_screen.dart';
+import 'package:awesome_ui/screens/Socket/socket_screen.dart';
 import 'package:awesome_ui/screens/Sopitas/sopitas_screen.dart';
 import 'package:awesome_ui/screens/SopitasV2/sopitas_screenV2.dart';
 import 'package:awesome_ui/screens/Tetris/Tetris.dart';
@@ -186,6 +187,12 @@ class Chooser extends StatelessWidget {
                           builder: (context) => PosterScreen()));
                     },
                     child: Text("Poster")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => SocketScreen()));
+                    },
+                    child: Text("Socket")),
               ],
             ),
           ),
