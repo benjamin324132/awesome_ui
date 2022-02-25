@@ -1,10 +1,12 @@
 import 'package:awesome_ui/screens/BackPrompt/MyHomePage.dart';
 import 'package:awesome_ui/screens/Bank%20Cards/bank_app.dart';
 import 'package:awesome_ui/screens/Banking%20App/banking_app_screen.dart';
+import 'package:awesome_ui/screens/BoardingPass/boarding_pass_screen.dart';
 import 'package:awesome_ui/screens/Boats%20App/ui/boat_list_page.dart';
 import 'package:awesome_ui/screens/Bottom%20Nav/bottom_nav_screen.dart';
 import 'package:awesome_ui/screens/Clock/main.dart';
 import 'package:awesome_ui/screens/DayAndNight/screens/login/login_screen.dart';
+import 'package:awesome_ui/screens/DonoutStore/donout_store_screen.dart';
 import 'package:awesome_ui/screens/FlappyBird/homepage.dart';
 import 'package:awesome_ui/screens/Hezi%20App/henzi_app_screen.dart';
 import 'package:awesome_ui/screens/Home%20Rental%20App/home_rental_app_screen.dart';
@@ -12,6 +14,7 @@ import 'package:awesome_ui/screens/JobsApp/jobs_app_screen.dart';
 import 'package:awesome_ui/screens/Paint%20App/paint_app_screen.dart';
 import 'package:awesome_ui/screens/Playstationcontroller/play_station_controller.dart';
 import 'package:awesome_ui/screens/Poster/poster_screen.dart';
+import 'package:awesome_ui/screens/RemoteTvControl/remote_tv_control_screen.dart';
 import 'package:awesome_ui/screens/Scaper/scraper_screen.dart';
 import 'package:awesome_ui/screens/Signup/signup_screen.dart';
 import 'package:awesome_ui/screens/SmartHome/smart_home_screen.dart';
@@ -193,6 +196,24 @@ class Chooser extends StatelessWidget {
                           builder: (context) => SocketScreen()));
                     },
                     child: Text("Socket")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => BoardingPassScree()));
+                    },
+                    child: Text("Boarding Pass")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => DonouStoreScreen()));
+                    },
+                    child: Text("Donout Store")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => RemoteTvControl()));
+                    },
+                    child: Text("Tv Control")),
               ],
             ),
           ),
