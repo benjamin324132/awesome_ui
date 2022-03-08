@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'dart:ui';
 import 'package:awesome_ui/screens/Boats%20App/models/boat.dart';
 import 'package:flutter/material.dart';

@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'dart:math' as math;
 
 class JobsApp extends StatefulWidget {
-  const JobsApp({Key key}) : super(key: key);
+  const JobsApp({Key? key}) : super(key: key);
 
   @override
   _JobsAppState createState() => _JobsAppState();
@@ -107,7 +107,7 @@ class _JobsAppState extends State<JobsApp> {
                   height: 55,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                    color: Colors.grey[200].withOpacity(0.6),
+                    color: Colors.grey[200]!.withOpacity(0.6),
                     borderRadius: BorderRadius.all(Radius.circular(13)),
                   ),
                   child: TextField(
@@ -285,10 +285,10 @@ class _JobsAppState extends State<JobsApp> {
 
 class JobCard extends StatelessWidget {
   const JobCard({
-    Key key,
-    this.img,
-    this.location,
-    this.title,
+    Key? key,
+    required this.img,
+    required this.location,
+    required this.title,
   }) : super(key: key);
   final String img;
   final String location;
@@ -303,7 +303,7 @@ class JobCard extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
             color: Colors.transparent,
-            border: Border.all(color: Colors.grey[300]),
+            border: Border.all(color: Colors.grey[300]!),
             borderRadius: BorderRadius.all(Radius.circular(18))),
         child: Padding(
           padding: const EdgeInsets.all(12.0),

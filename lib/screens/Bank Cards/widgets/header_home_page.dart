@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 class HeaderHomePage extends StatelessWidget {
   const HeaderHomePage({
-    Key key,
-    this.expandedFactor,
+    Key? key,
+    required this.expandedFactor,
   }) : super(key: key);
 
   final double expandedFactor;
@@ -84,7 +84,7 @@ class HeaderHomePage extends StatelessWidget {
 
 class _PlayServicesCard extends StatelessWidget {
   const _PlayServicesCard({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -101,7 +101,7 @@ class _PlayServicesCard extends StatelessWidget {
 
 class _HolidayGoalWidget extends StatelessWidget {
   const _HolidayGoalWidget({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -161,7 +161,7 @@ class _HolidayGoalWidget extends StatelessWidget {
 
 class _BankUserList extends StatelessWidget {
   const _BankUserList({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -189,8 +189,8 @@ class _BankUserList extends StatelessWidget {
 
 class _GreetingWidget extends StatelessWidget {
   const _GreetingWidget({
-    Key key,
-    this.user,
+    Key? key,
+    required this.user,
   }) : super(key: key);
 
   final BankClient user;

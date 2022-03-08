@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'dart:ui';
 import 'package:awesome_ui/screens/Bank%20Cards/utils/colors.dart';
 import 'package:flutter/material.dart';

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
 
 class SocketScreen extends StatefulWidget {
-  const SocketScreen({Key key}) : super(key: key);
+  const SocketScreen({Key? key}) : super(key: key);
 
   @override
   _SocketScreenState createState() => _SocketScreenState();
 }
 
 class _SocketScreenState extends State<SocketScreen> {
-  IO.Socket _socket;
+  late IO.Socket _socket;
   bool conected = false;
 
   @override

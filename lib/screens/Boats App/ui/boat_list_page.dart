@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'package:awesome_ui/screens/Boats%20App/models/boat.dart';
 import 'package:awesome_ui/screens/Boats%20App/ui/widgets/boat_card.dart';
 import 'package:flutter/material.dart';
@@ -101,7 +102,7 @@ class _BoatListPageState extends State<BoatListPage> {
 class _AnimatedCustomAppBar extends StatelessWidget {
   const _AnimatedCustomAppBar({
     Key key,
-    @required this.animate,
+    this.animate,
   }) : super(key: key);
 
   final bool animate;

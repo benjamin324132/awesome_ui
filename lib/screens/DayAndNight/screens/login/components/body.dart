@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'dart:async';
 import 'package:awesome_ui/screens/DayAndNight/size_config.dart';
 import 'package:flutter/material.dart';

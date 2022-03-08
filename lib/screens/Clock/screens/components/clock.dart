@@ -16,7 +16,7 @@ class Clock extends StatefulWidget {
 
 class _ClockState extends State<Clock> {
   DateTime _dateTime = DateTime.now();
-  Timer _timeDilationTimer;
+  late Timer _timeDilationTimer;
 
   @override
   void initState() {

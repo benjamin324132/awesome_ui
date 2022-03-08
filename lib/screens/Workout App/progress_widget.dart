@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 
 class ProgressWidget extends StatefulWidget {
   ProgressWidget(
-      {Key key,
-      this.value,
+      {Key? key,
+      required this.value,
       this.totalValue = 100,
-      this.activeColor,
-      this.backgroundColor,
-      this.title,
+      required this.activeColor,
+      required this.backgroundColor,
+      required this.title,
       this.durationTime})
       : super(key: key);
   final double totalValue;
@@ -24,9 +24,9 @@ class ProgressWidget extends StatefulWidget {
 
 class _ProgressWidgetState extends State<ProgressWidget>
     with TickerProviderStateMixin {
-  double progress;
-  Color activeColor;
-  Color backgroundColor;
+  late double progress;
+  late Color activeColor;
+  late Color backgroundColor;
   @override
   void initState() {
     progress = (widget.value * 100) / widget.totalValue;

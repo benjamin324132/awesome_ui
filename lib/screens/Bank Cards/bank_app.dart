@@ -8,7 +8,7 @@ import 'package:awesome_ui/screens/Bank%20Cards/widgets/header_home_page.dart';
 import 'package:flutter/material.dart';
 
 class BankCard extends StatefulWidget {
-  const BankCard({Key key}) : super(key: key);
+  const BankCard({Key? key}) : super(key: key);
 
   @override
   _BankCardState createState() => _BankCardState();
@@ -16,19 +16,19 @@ class BankCard extends StatefulWidget {
 
 class _BankCardState extends State<BankCard>
     with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-  PageController _pageController;
-  int _indexPage;
-  int _currentIndex;
-  bool _enableAddCreditCard;
+  late AnimationController _controller;
+  late PageController _pageController;
+  late int _indexPage;
+  late int _currentIndex;
+  late bool _enableAddCreditCard;
   double _blueBgTranslatePercent = 1.0;
   double _blueBgTransitionPercent = 1.0;
   bool _hideByVelocity = false;
 
   // Data
-  BankClient currentUser;
-  List<BankAccount> userAccounts;
-  AccountTransaction selectedLastTransaction;
+  late BankClient currentUser;
+  late List<BankAccount> userAccounts;
+  late AccountTransaction selectedLastTransaction;
 
   @override
   void initState() {
@@ -47,10 +47,10 @@ class _BankCardState extends State<BankCard>
   }
 
   void _pageListener() {
-    if (_pageController.page > 1) {
-      _blueBgTranslatePercent = _pageController.page;
+    if (_pageController.page! > 1) {
+      _blueBgTranslatePercent = _pageController.page!;
     } else {
-      _blueBgTransitionPercent = _pageController.page;
+      _blueBgTransitionPercent = _pageController.page!;
       _enableAddCreditCard = (_blueBgTransitionPercent < .1);
     }
     setState(() {});
@@ -80,13 +80,13 @@ class _BankCardState extends State<BankCard>
 
   void _onVerticalDragUpdate(DragUpdateDetails details) {
     if (_currentIndex > 0) {
-      if (details.primaryDelta > 0.0) {
+      if (details.primaryDelta! > 0.0) {
         _controller.value += 0.004;
       } else {
         _controller.value -= 0.004;
       }
 
-      if (details.primaryDelta > -1.5) {
+      if (details.primaryDelta! > -1.5) {
         _hideByVelocity = false;
       } else {
         _hideByVelocity = true;
@@ -226,8 +226,8 @@ class _BankCardState extends State<BankCard>
 
 class _TransactionRow extends StatelessWidget {
   const _TransactionRow({
-    Key key,
-    this.transaction,
+    Key? key,
+    required this.transaction,
   }) : super(key: key);
 
   final AccountTransaction transaction;

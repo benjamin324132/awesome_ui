@@ -11,11 +11,11 @@ class ScreenHolder extends StatefulWidget {
   final FloatingActionButton floatingActionButton;
 
   const ScreenHolder(
-      {Key key,
-      @required this.scaffoldKey,
-      @required this.title,
-      @required this.body,
-      this.floatingActionButton})
+      {Key? key,
+      required this.scaffoldKey,
+      required this.title,
+      required this.body,
+      required this.floatingActionButton})
       : super(key: key);
 
   @override

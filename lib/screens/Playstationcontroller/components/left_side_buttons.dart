@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'blankgap.dart';
 
 class LeftSideButtons extends StatelessWidget {
-  const LeftSideButtons({Key key}) : super(key: key);
+  const LeftSideButtons({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

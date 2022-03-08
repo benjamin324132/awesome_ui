@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class RemoteTvControl extends StatefulWidget {
-  const RemoteTvControl({Key key}) : super(key: key);
+  const RemoteTvControl({Key? key}) : super(key: key);
 
   @override
   _RemoteTvControlState createState() => _RemoteTvControlState();
@@ -228,7 +228,7 @@ class _RemoteTvControlState extends State<RemoteTvControl> {
 
 class Button extends StatelessWidget {
   const Button({
-    Key key,
+    Key? key,
     this.icon = Icons.surfing,
     this.height = 20,
     this.width = 20,
@@ -265,8 +265,8 @@ class Button extends StatelessWidget {
 
 class StyledButton extends StatelessWidget {
   const StyledButton({
-    Key key,
-    this.widget,
+    Key? key,
+    required this.widget,
     this.padding = 8,
     this.isSquare = true,
   }) : super(key: key);

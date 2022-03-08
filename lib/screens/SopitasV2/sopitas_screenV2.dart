@@ -7,7 +7,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:http/http.dart' as http;
 
 class SopitasScreen2 extends StatefulWidget {
-  const SopitasScreen2({Key key}) : super(key: key);
+  const SopitasScreen2({Key? key}) : super(key: key);
 
   @override
   _SopitasScreenState2 createState() => _SopitasScreenState2();

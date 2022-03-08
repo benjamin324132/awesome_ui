@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 
 class PostScreen3 extends StatelessWidget {
-  const PostScreen3({Key key, this.post}) : super(key: key);
+  const PostScreen3({Key? key, this.post}) : super(key: key);
   final dynamic post;
 
   content(String sub) {

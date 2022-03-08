@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class AccountCard extends StatelessWidget {
   const AccountCard({
-    Key key,
-    this.account,
+    Key? key,
+    required this.account,
   }) : super(key: key);
 
   final BankAccount account;

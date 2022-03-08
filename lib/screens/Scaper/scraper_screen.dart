@@ -4,7 +4,7 @@ import 'package:html/dom.dart' as dom;
 import 'package:html/parser.dart' as parser;
 
 class ScraperScreen extends StatefulWidget {
-  const ScraperScreen({Key key}) : super(key: key);
+  const ScraperScreen({Key? key}) : super(key: key);
 
   @override
   _ScraperScreenState createState() => _ScraperScreenState();

@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'package:awesome_ui/screens/DonoutStore/core/animations/fade_animation.dart';
 import 'package:awesome_ui/screens/DonoutStore/core/animations/page_transition.dart';
 import 'package:awesome_ui/screens/DonoutStore/core/animations/slide_animation.dart';

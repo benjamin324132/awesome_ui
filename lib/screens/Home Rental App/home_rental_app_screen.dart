@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeRentalApp extends StatefulWidget {
-  const HomeRentalApp({Key key}) : super(key: key);
+  const HomeRentalApp({Key? key}) : super(key: key);
 
   @override
   _HomeRentalAppState createState() => _HomeRentalAppState();

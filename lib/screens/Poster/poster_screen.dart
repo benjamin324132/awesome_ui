@@ -3,7 +3,7 @@ import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PosterScreen extends StatefulWidget {
-  const PosterScreen({Key key}) : super(key: key);
+  const PosterScreen({Key? key}) : super(key: key);
 
   @override
   _PosterScreenState createState() => _PosterScreenState();
@@ -308,7 +308,7 @@ class _PosterScreenState extends State<PosterScreen> {
                 }).toList(),
                 onChanged: (value) {
                   setState(() {
-                    slectedTextFontFamily = value;
+                    slectedTextFontFamily = value!;
                   });
                 },
               ),
@@ -329,7 +329,7 @@ class _PosterScreenState extends State<PosterScreen> {
                 }).toList(),
                 onChanged: (value) {
                   setState(() {
-                    slectedTextFontWeight = value;
+                    slectedTextFontWeight = value!;
                   });
                 },
               ),
@@ -349,7 +349,7 @@ class _PosterScreenState extends State<PosterScreen> {
                 }).toList(),
                 onChanged: (value) {
                   setState(() {
-                    slectedAlignment = value;
+                    slectedAlignment = value!;
                   });
                 },
               ),
@@ -369,7 +369,7 @@ class _PosterScreenState extends State<PosterScreen> {
                 }).toList(),
                 onChanged: (value) {
                   setState(() {
-                    slectedTextAlign = value;
+                    slectedTextAlign = value!;
                   });
                 },
               ),
@@ -407,7 +407,7 @@ class _PosterScreenState extends State<PosterScreen> {
                 }).toList(),
                 onChanged: (value) {
                   setState(() {
-                    slectedImgFit = value;
+                    slectedImgFit = value!;
                   });
                 },
               ),

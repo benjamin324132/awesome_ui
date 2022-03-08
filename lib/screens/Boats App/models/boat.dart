@@ -7,12 +7,12 @@ class Boat {
   final String imagePath;
 
   const Boat({
-    this.model,
-    this.owner,
-    this.description,
-    this.specs,
-    this.gallery,
-    this.imagePath,
+    required this.model,
+    required this.owner,
+    required this.description,
+    required this.specs,
+    required this.gallery,
+    required this.imagePath,
   });
 
   static const _description =

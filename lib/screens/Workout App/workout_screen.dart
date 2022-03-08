@@ -165,7 +165,7 @@ class _WorkOutScreenState extends State<WorkOutScreen> {
                         borderRadius: BorderRadius.all(Radius.circular(35)),
                         gradient: LinearGradient(
                           colors: [
-                            Colors.green[200],
+                            Colors.green[200]!,
                             Colors.blueAccent,
                             Colors.redAccent,
                           ],

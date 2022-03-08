@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MySecondPage extends StatefulWidget {
-  MySecondPage({Key key, this.title}) : super(key: key);
+  MySecondPage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -28,6 +28,9 @@ class _MySecondPageState extends State<MySecondPage> {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
       ),
     );
   }

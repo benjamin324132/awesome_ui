@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'package:awesome_ui/screens/DonoutStore/core/utils/theme/app_theme.dart';
 import 'package:awesome_ui/screens/DonoutStore/screens/splash_screen.dart';
 import 'package:flutter/material.dart';

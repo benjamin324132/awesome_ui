@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'dart:async';
 
 import 'package:awesome_ui/screens/DonoutStore/core/animations/fade_animation.dart';

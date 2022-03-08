@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class PlayStationController extends StatefulWidget {
-  const PlayStationController({Key key}) : super(key: key);
+  const PlayStationController({Key? key}) : super(key: key);
 
   @override
   _PlayStationControllerState createState() => _PlayStationControllerState();

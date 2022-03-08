@@ -9,7 +9,7 @@ class MyBarrier extends StatelessWidget {
   MyBarrier(
       {this.barrierHeight,
       this.barrierWidth,
-      this.isThisBottomBarrier,
+      required this.isThisBottomBarrier,
       this.barrierX});
 
   @override

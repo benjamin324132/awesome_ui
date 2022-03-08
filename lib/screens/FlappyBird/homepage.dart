@@ -6,7 +6,7 @@ import 'components/bird.dart';
 import 'components/coverscreen.dart';
 
 class FlappyBird extends StatefulWidget {
-  const FlappyBird({Key key}) : super(key: key);
+  const FlappyBird({Key? key}) : super(key: key);
 
   @override
   _FlappyBirdState createState() => _FlappyBirdState();

@@ -5,7 +5,7 @@ class MyBird extends StatelessWidget {
   final double birdWidth; // normal double value for width.
   final double birdHeight; // out of 2, 2 being the entire height of the screen
 
-  MyBird({this.birdY, this.birdWidth, this.birdHeight});
+  MyBird({this.birdY, required this.birdWidth, required this.birdHeight});
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BoardingPassScree extends StatefulWidget {
-  const BoardingPassScree({Key key}) : super(key: key);
+  const BoardingPassScree({Key? key}) : super(key: key);
 
   @override
   _BoardingPassScreeState createState() => _BoardingPassScreeState();

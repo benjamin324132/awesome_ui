@@ -5,7 +5,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:http/http.dart' as http;
 
 class SopitasScreen extends StatefulWidget {
-  const SopitasScreen({Key key}) : super(key: key);
+  const SopitasScreen({Key? key}) : super(key: key);
 
   @override
   _SopitasScreenState createState() => _SopitasScreenState();

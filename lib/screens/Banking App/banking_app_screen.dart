@@ -143,7 +143,7 @@ class _BankingAppState extends State<BankingApp> {
                       borderRadius: BorderRadius.all(Radius.circular(35)),
                       gradient: LinearGradient(
                         colors: [
-                          Colors.purple[300],
+                          Colors.purple[300]!,
                           Color(0xFF06A285),
                           Color(0xFF06A285),
                         ],

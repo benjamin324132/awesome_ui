@@ -11,6 +11,8 @@ import 'package:awesome_ui/screens/FlappyBird/homepage.dart';
 import 'package:awesome_ui/screens/Hezi%20App/henzi_app_screen.dart';
 import 'package:awesome_ui/screens/Home%20Rental%20App/home_rental_app_screen.dart';
 import 'package:awesome_ui/screens/JobsApp/jobs_app_screen.dart';
+import 'package:awesome_ui/screens/NftMarketPlace/screens/onboarding_screen.dart';
+import 'package:awesome_ui/screens/NftScroll/nft_scroll_home.dart';
 import 'package:awesome_ui/screens/Paint%20App/paint_app_screen.dart';
 import 'package:awesome_ui/screens/Playstationcontroller/play_station_controller.dart';
 import 'package:awesome_ui/screens/Poster/poster_screen.dart';
@@ -214,6 +216,18 @@ class Chooser extends StatelessWidget {
                           builder: (context) => RemoteTvControl()));
                     },
                     child: Text("Tv Control")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => NftScrollHome()));
+                    },
+                    child: Text("Nft Scroll")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => OnBoardingScreen()));
+                    },
+                    child: Text("Nft Marketplace")),
               ],
             ),
           ),
