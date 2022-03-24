@@ -4,8 +4,10 @@ import 'package:awesome_ui/screens/Banking%20App/banking_app_screen.dart';
 import 'package:awesome_ui/screens/BoardingPass/boarding_pass_screen.dart';
 import 'package:awesome_ui/screens/Boats%20App/ui/boat_list_page.dart';
 import 'package:awesome_ui/screens/Bottom%20Nav/bottom_nav_screen.dart';
+import 'package:awesome_ui/screens/Building/building_screen.dart';
 import 'package:awesome_ui/screens/Clock/main.dart';
 import 'package:awesome_ui/screens/DayAndNight/screens/login/login_screen.dart';
+import 'package:awesome_ui/screens/DeliveryFood/food_delivery_screen.dart';
 import 'package:awesome_ui/screens/DonoutStore/donout_store_screen.dart';
 import 'package:awesome_ui/screens/FlappyBird/homepage.dart';
 import 'package:awesome_ui/screens/Hezi%20App/henzi_app_screen.dart';
@@ -228,6 +230,18 @@ class Chooser extends StatelessWidget {
                           builder: (context) => OnBoardingScreen()));
                     },
                     child: Text("Nft Marketplace")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => FoodDeliveryScreen()));
+                    },
+                    child: Text("Food Delivery")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => BuildingScreen()));
+                    },
+                    child: Text("Building")),
               ],
             ),
           ),

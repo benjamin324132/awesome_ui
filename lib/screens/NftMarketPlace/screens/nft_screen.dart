@@ -169,7 +169,7 @@ class _AppBar extends StatelessWidget {
           onTap: () {
             Navigator.pop(context);
           },
-          child: const Icon(Icons.arrow_back),
+          child: const Icon(Icons.arrow_back_ios),
         ),
         SizedBox(width: 16),
         Text(
@@ -181,7 +181,7 @@ class _AppBar extends StatelessWidget {
         ),
         const Spacer(),
         const Icon(
-          Icons.headphones_battery_sharp,
+          Icons.favorite,
           color: Colors.red,
         ),
         SizedBox(width: 16),

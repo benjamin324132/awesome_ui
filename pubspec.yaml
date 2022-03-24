@@ -54,6 +54,7 @@ flutter:
   assets:
     - assets/images/
     - assets/donout/
+    - assets/food/
     - assets/icons/
     - assets/bank_challenge/img/
 

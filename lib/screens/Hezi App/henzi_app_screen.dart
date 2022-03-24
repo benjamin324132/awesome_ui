@@ -32,8 +32,7 @@ class _HenziAppState extends State<HenziApp> {
               onPressed: () {})
         ],
       ),
-      body: SingleChildScrollView(
-          child: Stack(
+      body: Stack(
         children: [
           Positioned(
             left: 50,
@@ -98,18 +97,28 @@ class _HenziAppState extends State<HenziApp> {
                   ],
                 )),
           ),
-          Container(
-              /* decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color(0xffd5fbf2).withOpacity(0.2),
-                    Color(0xffe1fef7).withOpacity(0.1),
-                    Color(0xfffbfbfb),
+          Positioned(
+            left: size.width / 2,
+            bottom: 10,
+            child: Container(
+                height: 80.0,
+                width: 80,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.redAccent.withOpacity(0.25),
+                      blurRadius: 76.0, // soften the shadow
+                      spreadRadius: 1.0, //extend the shadow
+                      offset: Offset(
+                        16.0, // Move to right 10  horizontally
+                        5.0, // Move to bottom 5 Vertically
+                      ),
+                    )
                   ],
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                ),
-              ),*/
+                )),
+          ),
+          Container(
               child: Padding(
             padding: EdgeInsets.all(20),
             child: Column(
@@ -309,7 +318,7 @@ class _HenziAppState extends State<HenziApp> {
             ),
           )),
         ],
-      )),
+      ),
     );
   }
 
